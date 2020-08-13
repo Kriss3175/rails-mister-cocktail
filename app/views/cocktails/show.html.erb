@@ -1,0 +1,34 @@
+<div class="container">
+  <div class="row">
+    <div class="col">
+        <p>
+          <strong>Name:</strong>
+          <%= @cocktail.name %>
+        </p>
+
+        <p>
+          <strong>Ingredients:</strong>
+          <% @cocktail.ingredients.each do |ingredient| %>
+          <%= ingredient.name  %>
+
+          <% end %>
+
+        </p>
+
+        <ul class="list-group">
+          <% @cocktail.doses.each do |dose| %>
+            <li class="list-group-item">
+                  <%= dose.description %>
+                  <%= link_to "Remove",
+                              cocktail_dose_path(@cocktail, dose),
+                              method: :delete,
+                              data: { confirm: "Are you sure?" } %>
+                </li>
+          <% end %>
+        </ul>
+
+        <%= link_to 'Back', cocktails_path, class: "btn btn-success" %> |
+        <%= link_to "Create a dose", new_cocktail_dose_path(@cocktail), class: "btn btn-warning" %>
+      </div>
+  </div>
+</div>
