@@ -18,7 +18,7 @@
         <ul class="list-group">
           <% @cocktail.doses.each do |dose| %>
             <li class="list-group-item">
-                  <%= dose.description %>
+                  <%= dose.description%> <%= dose.ingredient.name %>
                   <%= link_to "Remove",
                               cocktail_dose_path(@cocktail, dose),
                               method: :delete,
