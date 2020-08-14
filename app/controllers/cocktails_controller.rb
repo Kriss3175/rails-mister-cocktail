@@ -13,6 +13,7 @@ class CocktailsController < ApplicationController
 
   def edit
     @cocktail = Cocktail.find(params[:id])
+    raise
   end
 
     def create

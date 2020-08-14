@@ -1,14 +1,28 @@
+<body>
+  <div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('https://res.cloudinary.com/dzao5ujoq/image/upload/v1597416788/cocktails_mtofp9.jpg')">
+  <div class="container">
+    <h1><strong>Mister Cocktail</strong> for <strong>real connoisseurs</strong> !</h1>
+    <p>Back to the roots and learn the tips of the mixologists around the world.</p>
+    <a class="btn btn-flat" href="#">Follow us !</a>
+  </div>
+</div>
+
 <div class="container">
   <div class="row">
     <div class="col">
-      <h1>All cocktails</h1>
-      <ul>
-        <% @cocktails.each do |cocktail| %>
-          <li><%= link_to cocktail.name, cocktail_path(cocktail) %></li>
-        <% end %>
-        <%= link_to "Create a cocktail", new_cocktail_path, class: "btn btn-warning" %>
-      </ul>
-
+        <h1>All cocktails</h1>
+          <ul>
+            <% @cocktails.each do |cocktail| %>
+              <li><%= link_to cocktail.name, cocktail_path(cocktail) %></li>
+            <% end %>
+            <%= link_to "Create a cocktail", new_cocktail_path, class: "btn btn-warning" %>
+          </ul>
     </div>
   </div>
 </div>
+</body>
+
+
+
+
+
