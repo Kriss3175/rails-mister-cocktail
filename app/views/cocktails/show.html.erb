@@ -6,7 +6,11 @@
           <%= @cocktail.name %>
         </p>
         <p>
-          <%= cl_image_tag @cocktail.photo.key, height: 300, width: 400, crop: :fill  %>
+          <% if  %>
+            <%= cl_image_tag @cocktail.photo.key, height: 300, width: 400, crop: :fill  %>
+          <% else %>
+            No photo
+          <% end %>
         </p>
 
         <p>
