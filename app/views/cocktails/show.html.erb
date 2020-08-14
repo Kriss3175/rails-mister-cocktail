@@ -6,7 +6,7 @@
           <%= @cocktail.name %>
         </p>
         <p>
-          <% if  %>
+          <% if @cocktail.photo.attached? %>
             <%= cl_image_tag @cocktail.photo.key, height: 300, width: 400, crop: :fill  %>
           <% else %>
             No photo
@@ -36,6 +36,8 @@
 
         <%= link_to 'Back', cocktails_path, class: "btn btn-success" %> |
         <%= link_to "Create a dose", new_cocktail_dose_path(@cocktail), class: "btn btn-warning" %>
+        <%= link_to "Edit the cocktail", edit_cocktail_path(@cocktail), class: "btn btn-warning" %>
+        <%= link_to "Delete the cocktail", cocktails_path(@cocktail), class: "btn btn-warning" %>
       </div>
   </div>
 </div>
