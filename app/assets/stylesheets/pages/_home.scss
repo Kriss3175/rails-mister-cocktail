@@ -1,1 +1,53 @@
+.banner {
+  min-height: 500px,
+}
+
+.col {
+padding-top: 60px;
+h1 {
+    color: #15353D;
+    padding-left: 18px;
+  }
+a {
+  color:#00353D;
+  margin-bottom: 15px;
+  text-decoration: none;
+}
+a:hover {
+  color: #68787C
+}
+}
+
+.et_pb_post {
+ul li {
+    list-style-type: none;
+}
+
+ul li::before {
+    font-family: 'ETmodules';
+    font-size: 120%;
+    color: #cc692f;
+    float: left;
+    margin-left: -1em;
+    margin-right: 0.5em;
+}
+}
+
+.et_pb_post .fa-cocktail {
+  color: #C6A942;
+}
+
+
+.block {
+  background-color : #FDFDFD;
+  box-shadow: 2px 5px 5px #A6A9BC;
+  padding: 60px;
+  border-radius: 10px;
+  margin-bottom: 100px;
+  margin-top: 20px;
+
+}
+
+
+
 // Specific CSS for your home-page
